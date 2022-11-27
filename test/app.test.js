@@ -13,6 +13,6 @@ it('Etherum address', async () => {
 describe('Testing More than 100 addresses', function() {
     it('Etherum address', async () => {
         const result = await Utility.Call_Get_Request(JSON.stringify(Common.eth_Address));
-        expect(result).to.equal(""); 
+        expect(result).to.equal(undefined); 
       });
     })
