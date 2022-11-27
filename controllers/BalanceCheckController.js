@@ -23,12 +23,10 @@ module.exports = {
 
           let formated_data = [].concat.apply([], responses)
           let totalBalance = formated_data.reduce((a, b) => +a + +b.balance, 0);
-          let ethBalance = await Web3.utils.fromWei(totalBalance.toString(), 'ether');
           return res.json({
             status: 200,
             addresses: formated_data,
             totalBalance : totalBalance,
-            balance_in_ether : ethBalance,
             message: "Data",
           });
         })
@@ -38,7 +36,7 @@ module.exports = {
             status: 400,
             addresses: [],
             totalBalance : 0,
-            balance_in_ether : 0,
+            
             message: "Error, Please check the log",
           });
         });
@@ -48,7 +46,6 @@ module.exports = {
         status: 400,
         addresses: [],
         totalBalance : 0,
-        balance_in_ether : 0,
         message: "Error, Please check the log",
       });
     }
