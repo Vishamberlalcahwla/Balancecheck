@@ -9,4 +9,6 @@
     - API_KEY = "ADD YOUR API KEY"
  - node app.js
  - npm run test (For Unit Test)
+ - Copy and Paste in Postman http://localhost:4000/checkBalance
+ - Download the Postman Collection https://www.getpostman.com/collections/410e098a01e638abfa77
 
