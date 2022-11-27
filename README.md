@@ -1,7 +1,7 @@
 # Balance Checking API
 ## This is project for .
 
-###### For running this project you have to install following:
+###### For running this project you have to follow following steps:
  - cd Task
  - npm install or ubuntu (sudo npm install)
  - make .env file and add following variable
